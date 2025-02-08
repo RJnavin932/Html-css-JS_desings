@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            background-color:#e5ba73;
+        }
+        .row{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .mark_row{
+            display: flex;
+            justify-content: center;
+            column-gap: 10px;
+            width: 50%;
+            margin: 10px 0px;
+        }
+        .sub_value{
+            width: 35%;
+        }
+        input[type='text']{
+            width: 100%; 
+            padding: 10px 0px;
+            border: none;
+            outline: none;
+            font-weight: bold;
+            border-radius: 7px;
+        }
+        .button{
+            border: none;
+            outline: none;
+            padding: 10px 0px;
+            width: 150px;
+            /* height: 50px; */
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1.1rem;
+            font-weight: 900;
+            background-color: #faf8f1;
+            border-radius: 5px;
+        }
+        .total{
+            width: 200px;
+            height: 150px;
+            padding: 20px;
+            background-color: #c58940;
+            margin: 10px 0px;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 10px;
+            line-height:3.7;
+        }
+        .website{
+            margin-top: 20px;
+        }
+        .prj_title{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h2 class="website">WWW.vijanthtutorial.com</h2>
+            <h3 class="prj_title">Students Marks</h3>
+            <div class="mark_row">
+                <div class="sub_name">Tamil</div>
+                <div class="sub_value">
+                    <input type="text" name="" id="Tamil">
+                </div>
+            </div>
+            <div class="mark_row">
+                <div class="sub_name">English</div>
+                <div class="sub_value">
+                    <input type="text" name="" id="English">
+                </div>
+            </div>
+            <div class="mark_row">
+                <div class="sub_name">Maths</div>
+                <div class="sub_value">
+                    <input type="text" name="" id="Maths">
+                </div>
+            </div>
+            <div class="mark_row">
+                <div class="sub_name">Science</div>
+                <div class="sub_value">
+                    <input type="text" name="" id="Science">
+                </div>
+            </div>
+            <div class="mark_row">
+                <div class="sub_name">Social</div>
+                <div class="sub_value">
+                    <input type="text" name="" id="Social">
+                </div>
+            </div>
+            <div class="mark_row">
+            <input type="button" name="" id="total" class="button" value="Total">
+            </div>
+            <div class="mark_row">
+                <p class="total" id="show_total">0</p>
+            </div>
+        </div>
+    </div>
+    <script src="./marklist.js"></script>
+</body>
+</html>
