@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #2B3467;
+        }
+        body{
+            background-color: #E5E5cb;
+        }
+        .website{
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 2px;
+            color: #2B3467;
+        }
+        .row{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .counter{
+            width: 250px;
+            height: 250px;
+            background-color: #FFF6bd;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 20px;
+            border-radius: 15px;
+        }
+        .button{
+            border: none;
+            outline: none;
+            text-align: center;
+            padding: 10px 0px;
+            width: 150px;
+            height: 50px;
+            border-radius: 10px;
+            background-color: #86c8bc;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="website">WWW.vijanthtutorial.com</h2>
+    <div class="cotainer">
+        <div class="row">
+            <div class="counter">
+                <div class="number" id="num">0</div>
+                </div>
+                <div>
+                <button class="button" id="incr">increment</button>
+                <button class="button" id="decr">decrement</button>
+                <button class="button" id="reset">reset</button></div>
+     </div>
+    </div>
+    <script src="./numicre_decre.js"></script>
+
+</body>
+</html>
