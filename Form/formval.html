@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .error-msg{
+            color: red;
+            display: block;
+        }
+    </style>
+</head>
+<body id="form"> 
+    <div class="form">
+    <form action="" method="post" id="demoform">
+    <p>
+        <label for="name">Name:</label><input type="text" name="name" id="name" class="form-child">
+        <span id="name-error" class="error-msg"></span>
+    </p>
+    
+    <p>
+        <label for="email">Email</label><input type="text" name="email" id="email">
+        <span id="email-error" class="error-msg"></span>
+    </p>
+    
+    <p>
+        <label for="Password">Password:</label><input type="text" name="Password" id="Password">
+        <span id="Password-error" class="error-msg"></span>
+    </p>
+   
+    <p>
+        <label for="RetypePassword">RetypePassword:</label><input type="text" name="RetypePassword" id="RetypePassword">
+        <span id="RetypePassword-error" class="error-msg"></span>
+    </p>
+   
+    <p>
+        <label for="hobby">Hobby:</label><select name="hobby" id="hobby">
+            <option value="">None</option>
+            <option value="Book">Book</option>
+            <option value="Read">Read</option>
+            <option value="Games">Games</option>
+        </select>
+        <span id="hobby-error" class="error-msg"></span>
+    </p>
+
+    <p>
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" id="gender" value="male">Male:
+        <input type="radio" name="gender" id="gender" value="Female">Female:
+    
+        <span  id="gender-error" class="error-msg"></span>
+       </p>
+
+    <p>
+        <label for="Study" >Study:</label>
+        <input type="checkbox" name="Study" id=" Study" value="BA">
+        BA
+        <input type="checkbox" name="Study" id="Study" value="MA">
+        MA
+        <input type="checkbox" name="Study" id="Study" value="Phd">
+        Phd
+        <span id="Study-error" class="error-msg"></span>
+    </p>
+
+    <p>
+        <label for="address">Address:</label>
+        <textarea name="address" id="address"></textarea>
+        <span id="address-error" class="error-msg"></span>
+    </p>
+    
+    <p>
+        <button id="btn">Save</button>
+    </p>
+</form>
+</div>
+<script src="formval.js"></script>
+</body>
+</html>
